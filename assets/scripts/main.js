@@ -1,6 +1,6 @@
 var button = document.getElementById("honk-btn");
 var airhorn = document.getElementById("horn-sound");
-var audio = new Audio("assets/media/audio/air-horn.mp3");
+var audio = new Audio("party-horn.mp3");
 button.addEventListener("click", function() {
     if(document.getElementById("radio-air-horn").checked)
     { alert("radio-air-horn");
