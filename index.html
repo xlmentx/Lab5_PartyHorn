@@ -46,12 +46,18 @@
         </fieldset>
 
         <audio id="horn-sound" src="./assets/media/audio/air-horn.mp3"></audio>
-        /**/
-        <script>
-        horn-sound.play()
-        </script>
-         <button onclick="sound.play()"> Click Me </button>
-        /**/
+
+/**/
+<audio id="audio" src="./assets/media/audio/air-horn.mp3" autoplay="false" ></audio>
+<a onclick="playSound();"> Play</a>
+<script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+</script>
+/**/
+
         <div id="honk-btn-container">
           <button id="honk-btn" type="submit">Honk</button>
         </div>
