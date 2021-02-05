@@ -13,3 +13,13 @@ button.addEventListener("click", function() {
     {	alert("radio-party-horn");
     }
 });
+
+var x = document.getElementById("horn-sound"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
