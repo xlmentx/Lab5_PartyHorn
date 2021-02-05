@@ -1,28 +1,17 @@
 var button = document.getElementById("honk-btn");
-var airhorn = document.getElementById("horn-sound");
-var audio = new Audio('assets/media/audio/party-horn.mp3');
+var airhorn = new Audio('assets/media/audio/air-horn.mp3');
+var carhorn = new Audio('assets/media/audio/car-horn.mp3');
+var partyhorn = new Audio('assets/media/audio/party-horn.mp3');
 button.addEventListener("click", function(event) {
     event.preventDefault();
     
     if(document.getElementById("radio-air-horn").checked)
-    {   audio.play(); 
+    {   airhorn.play(); 
     }
     else if(document.getElementById("radio-car-horn").checked)
-    {	alert("radio-car-horn");
-        playAudio();
+    {	carhorn.play();
     }
     else if(document.getElementById("radio-party-horn").checked)
-    {	alert("radio-party-horn");
-        airhorn.play();
+    {	partyhorn.play();
     }
 });
-
-var x = document.getElementById("horn-sound"); 
-
-function playAudio() { 
-  x.play(); 
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-} 
