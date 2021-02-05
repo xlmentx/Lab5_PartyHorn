@@ -3,7 +3,7 @@ var airhorn = document.getElementById("horn-sound");
 var audio = new Audio('assets/media/audio/party-horn.mp3');
 button.addEventListener("click", function() {
     if(document.getElementById("radio-air-horn").checked)
-    {   function(){audio.play();} 
+    {   audio[0].play(); 
 
     }
     else if(document.getElementById("radio-car-horn").checked)
