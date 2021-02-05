@@ -1,9 +1,9 @@
 var btn = document.getElementById("honk-btn");
+var tBTN = document.getElementById("test");
 var snd = document.getElementById("horn-sound");
 
-button.addEventListener('click', snd.play()); 
+var val = getRadioVal(document.getElementById('audio-selection'), 'radio-sound');
 
-function playSound() {
-  var sound = document.getElementById("audio");
-  sound.play();
-}
+button.addEventListener('click', snd.play()); 
+button.addEventListener('click', alert(val)); 
+
