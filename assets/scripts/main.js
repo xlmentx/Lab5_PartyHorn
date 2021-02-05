@@ -4,6 +4,6 @@ var snd = document.getElementById("horn-sound");
 
 var val = getRadioVal(document.getElementById('audio-selection'), 'radio-sound');
 
-button.addEventListener('click', snd.play()); 
-button.addEventListener('click', alert(val)); 
+button.addEventListener('click', function(){snd.play()}); 
+button.addEventListener('click', function(){alert(val)}); 
 
