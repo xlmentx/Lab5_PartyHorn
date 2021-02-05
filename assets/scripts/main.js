@@ -1,3 +1,6 @@
-// main.js
+var btn = document.getElementById("honk-btn");
+var snd = document.getElementById("horn-sound");
 
-// TODO
+btn.onclick = function() {
+  snd.play();
+}
