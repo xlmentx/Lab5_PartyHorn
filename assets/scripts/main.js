@@ -1,5 +1,5 @@
 var button = document.getElementById("honk-btn");
-var airhorn = new Audio("/assets/media/audio/air-horn.mp3");
+var airhorn = document.getElementById("horn-sound");
 var carhorn = new Audio("/assets/media/audio/car-horn.mp3");
 var partyhorn = new Audio("/assets/media/audio/party-horn.mp3");
 
