@@ -1,10 +1,11 @@
 var button = document.getElementById("honk-btn");
 var airhorn = document.getElementById("horn-sound");
 var audio = new Audio('assets/media/audio/party-horn.mp3');
-button.addEventListener("click", function() {
+button.addEventListener("click", function(event) {
+    event.preventDefault();
+    
     if(document.getElementById("radio-air-horn").checked)
     {   audio[0].play(); 
-
     }
     else if(document.getElementById("radio-car-horn").checked)
     {	alert("radio-car-horn");
