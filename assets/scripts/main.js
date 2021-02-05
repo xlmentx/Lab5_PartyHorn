@@ -1,8 +1,4 @@
-<script>
-  var btn = document.getElementById("honk-btn");
-  var snd = document.getElementById("horn-sound");
+var btn = document.getElementById("honk-btn");
+var snd = document.getElementById("horn-sound");
 
-  btn.onclick = function() {
-    snd.play();
-  }
-</script>
+button.addEventListener('click', snd.play()); 
