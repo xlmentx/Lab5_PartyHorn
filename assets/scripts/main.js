@@ -3,5 +3,7 @@ var snd = document.getElementById("horn-sound");
 
 button.addEventListener('click', snd.play()); 
 
-
-var sound = new Audio("./assets/media/audio/air-horn.mp3"); 
+function playSound() {
+  var sound = document.getElementById("audio");
+  sound.play();
+}
