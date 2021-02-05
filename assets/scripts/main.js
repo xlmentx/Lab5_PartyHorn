@@ -5,13 +5,15 @@ button.addEventListener("click", function(event) {
     event.preventDefault();
     
     if(document.getElementById("radio-air-horn").checked)
-    {   audio[0].play(); 
+    {   audio.play(); 
     }
     else if(document.getElementById("radio-car-horn").checked)
     {	alert("radio-car-horn");
+        playAudio();
     }
     else if(document.getElementById("radio-party-horn").checked)
     {	alert("radio-party-horn");
+        airhorn.play();
     }
 });
 
