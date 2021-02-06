@@ -1,23 +1,23 @@
+var airhorn = document.getElementById("radio-air-horn");
+var carhorn = document.getElementById("radio-car-horn");
+var partyhorn = document.getElementById("radio-party-horn");
+var image = document.getElementById("sound-image");
+var sound = new Audio('assets/media/audio/air-horn.mp3');
 var button = document.getElementById("honk-btn");
-var airhorn = new Audio('assets/media/audio/air-horn.mp3');
-var carhorn = new Audio('assets/media/audio/car-horn.mp3');
-var partyhorn = new Audio('assets/media/audio/party-horn.mp3');
 
-var air = document.getElementById("radio-air-horn");
-var car = document.getElementById("radio-car-horn");
-var party = document.getElementById("radio-party-horn");
-var sound;
-
-air.addEventListener("click", function(){
-    sound=airhorn
+airhorn.addEventListener("click", function(){
+    image = new Image('assets/media/images/air-horn.svg');
+    sound = new Audio('assets/media/audio/air-horn.mp3');
 });
     
-car.addEventListener("click", function(){
-    sound=carhorn
+carhorn.addEventListener("click", function(){
+    image = new Image('assets/media/images/car.svg');
+    sound = new Audio('assets/media/audio/car-horn.mp3');
 });
 
-party.addEventListener("click", function(){
-    sound=partyhorn
+partyhorn.addEventListener("click", function(){
+    image = new Image('assets/media/images/party-horn.svg');
+    sound = new Audio('assets/media/audio/party-horn.mp3');
 });
 
 
