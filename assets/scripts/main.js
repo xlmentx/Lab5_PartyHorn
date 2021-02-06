@@ -19,8 +19,10 @@ volumeSlider.addEventListener("change", function(){
 });
 
 function updateVolumeIcon()
-{   if(volumeNumber.value == 0)
-    {   volumeImage.src = "assets/media/icons/volume-level-0.svg";
+{   button.disabled = false;
+    if(volumeNumber.value == 0)
+    {   button.disabled = true;
+        volumeImage.src = "assets/media/icons/volume-level-0.svg";
     }   
     else if(volumeNumber.value <= 33)
     {   volumeImage.src = "assets/media/icons/volume-level-1.svg";
@@ -50,6 +52,6 @@ partyhorn.addEventListener("click", function(){
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
-    sound.volume = volumeNumber.value;
+    sound.volume = volumeNumber.value*1;
     sound.play(); 
 });
