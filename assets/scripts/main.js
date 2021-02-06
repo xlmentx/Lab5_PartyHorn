@@ -52,6 +52,6 @@ partyhorn.addEventListener("click", function(){
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
-    sound.volume = volumeNumber.value*1;
+    sound.volume = volumeNumber.value/100;
     sound.play(); 
 });
